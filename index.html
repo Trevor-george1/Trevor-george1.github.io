@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>W | 6</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script>
+function myFunction() {
+  confirm("Click ok to submit the response");
+}
+</script>
+<script>
+function myFunction2() {
+  document.getElementById("rform").submit();
+}
+</script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="navbar">
+            <ul>
+                <li>
+                <div class="home">
+                	<a href="index.html">Home</a>
+                	   <div class="homebtn">
+                		 <a href="#title">Register Now!</a>
+                	</div>
+                </div>
+                	</li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+            <div id="logo">
+                <img src="Images/logo3.png" alt="">
+            </div>
+            <ol>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ol>
+        </div>
+        <div id="sideImg">
+            <img src="Images/car.png" alt="">
+        </div>
+        <div id="contentSection">
+            <h2>ALPINA D3 S</h2>
+            <p>This is the brand new 2021 Alpina D3 S. Sprints from 0-100 km/hr in just 4.6 seconds! When it comes to the peak torque, the D3 S unleashes 730 Nm (538 lb-ft) between 1,750 rpm and 2,750 rpm – 30 Nm (22 lb-ft) more than the M340d.
+            </p>
+            <a href="https://www.autocar.co.uk/car-review/alpina/d3-biturbo-2013-2019">
+            <button>EXPLORE</button>
+          </a>
+            <h1>W|6</h1>
+           <!-- <img src="Images/logo3.png" alt=""> -->
+        </div>
+        </div>
+   	</div>
+   	<div id="container2">
+   		<div id="title">
+   			<br><h2>REGISTER TO GET YOUR OWN CAR!</h2>
+   		</div>
+        <div id="rform">
+        	<form action="php/action_page.php" method="get">
+        <div class="item">
+          <p>Name</p>
+          <div class="name-item">
+            <input type="text" name="fname" placeholder="First" />
+            <input type="text" name="lname" placeholder="Last" />
+          </div>
+        </div>
+        <div class="item">
+          <p>Email</p>
+          <input type="text" name="email" placeholder="Email Address" />
+        </div>
+        <div class="item">
+          <p>Phone</p>
+          <input type="text" name="phone" placeholder="Phone Number" />
+        </div>
+        <div class="item">
+          <p>Contact Address</p>
+          <input type="text" name="Street" placeholder="Street address" />
+          <div class="city-item">
+            <input type="text" name="city" placeholder="City" />
+            <input type="text" name="region" placeholder="Region" />
+            <input type="text" name="zip" placeholder="Postal / Zip code" />
+            <select>
+              <option value="">Country</option>
+              <option value="1">USA</option>
+              <option value="2">Germany</option>
+              <option value="3">France</option>
+              <option value="4">UK</option>
+              <option value="5">Kenya</option>
+            </select>
+          </div>
+        </div>
+        <div class="question">
+          <p>Car Model</p>
+          <select>
+              <option value="">Vehicle</option>
+              <option value="1">BMW</option>
+              <option value="2">Porsche</option>
+              <option value="3">Meredes</option>
+              <option value="4">Toyota</option>
+              <option value="5">Subaru</option>
+            </select>
+          </div>
+        </div>        
+
+        <div class="btn-block">
+          <button type="submit" onclick="myFunction()" onclick="myFunction2()" value="Submit">SEND</button>
+        </div>
+      </form>
+        </div>	
+    </div>
+</body>
+</html>

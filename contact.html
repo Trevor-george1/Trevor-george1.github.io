@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>W | 6 - Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script>
+    	function myFunction() {
+  confirm("Click ok to confirm submission");
+}
+    </script>
+    <script>
+function myFunction2() {
+  document.getElementById("rform").submit();
+}
+</script>
+    <link rel="stylesheet" href="css/constyle.css">
+</head>
+<body>
+    <div id="container">
+        <div id="navbar">
+            <ul>
+                <li>
+                <div class="home">
+                	<a href="index.html">Home</a>
+                	   <div class="homebtn">
+                		 <a href="#title">Register Now!</a>
+                	</div>
+                </div>
+                	</li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+            <div id="logo">
+                <img src="Images/logo3.png" alt="">
+            </div>
+            <ol>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ol>
+        </div>
+         <div class="main-block">
+      <div class="left-part">
+        <i class="fas fa-envelope"></i>
+        <i class="fas fa-at"></i>
+        <i class="fas fa-mail-bulk"></i>
+      </div>
+        <form action="php/action_page.php" method="get">
+        <h1>Contact Us</h1>
+        <div class="info">
+          <input class="fname" type="text" name="name" placeholder="Full name">
+          <input type="text" name="name" placeholder="Email">
+          <input type="text" name="name" placeholder="Phone number">
+        </div>
+        <p>Message</p>
+        <div>
+          <textarea rows="4"></textarea>
+        </div>
+        <button type="submit" onclick="myFunction2()" value="Submit" onclick="myFunction()">Submit</button>
+      </form>
+    </div>
+</body>
+</html>
